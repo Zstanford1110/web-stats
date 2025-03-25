@@ -1,0 +1,15 @@
+{
+  "name": "Web Stats",
+  "description": "Stats for your most frequently visited websites",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "tabs", "history"],
+  "background": {
+    "service_worker": "scripts/web-logger.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup/index.html",
+    "default_icon": "icons/icon.png"
+  }
+}
